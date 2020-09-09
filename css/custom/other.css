@@ -1,0 +1,309 @@
+@import url('../font/fonts.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+:root{
+    /* Theme color */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+
+    /* gradient color */
+    --sky:linear-gradient(120deg,#a1c4fd 0%,#c2e9fb 100%);
+
+    /* theme font-family */
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+}
+
+/* -------- Global Classes -------- */
+
+a{
+    text-decoration: none;
+    color:var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+hr{
+    margin-bottom: .2rem 0;
+}
+
+/* ----x--- Global Classes ---x---- */
+
+/* --- Nav bar --- */
+
+.nav-logo{
+    width: 15%;
+    float: left;
+    text-align: center;
+    padding-left: .5rem;
+    /* background-color: #f9f9f9; */
+}
+
+.nav{
+    width: 84.5%;
+    float: right;
+}
+
+.nav-bar{
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 3rem 0 3rem;
+    overflow: hidden;
+    /* background-color: #f9f9f9; */
+  }
+  
+  .nav-bar li {
+    float: left;
+  }
+  
+  .nav-bar li a {
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+
+  .nav-bar li i {
+    color: orange;
+  }
+
+  .nav-bar li a:hover{
+    color: orange;
+    background: #f2f2f2;
+  }
+
+.nav-bar .nav-logo .nav-brand span{
+    color: #FE980F;
+}
+
+.nav-bar .nav-logo .nav-brand a{
+    font-size: .6rem;
+    text-align: center;
+    padding: .4rem 0;
+    display: block;
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+
+/* -x- Nav bar -x- */
+
+/* --- other --- */
+
+.main-content{
+    width: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+    height: auto;
+    /* margin-bottom: 5rem; */
+}
+
+.main-content .contact{
+    width: 40%;
+    float: left;
+    height: auto;
+    padding: 10rem 2rem 2rem 2rem;
+    text-align: center; 
+    font-family: var(--Abel);
+    margin-bottom: 3rem;
+}
+
+.main-content .contact .item-content h4{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-content .contact .item-content .items a{
+    text-decoration: none;
+    color: #555;
+    font-size: 1.8rem;
+    margin: .5rem;
+}
+
+.main-content .contact .item-content .items a:hover{
+    color: orange;
+}
+
+.main-content .contact .item-content .items i{
+    font-size: 2.8rem;
+    color: orange;
+}
+
+.main-content .map{
+    width: 60%;
+    float: right;
+    height: auto;
+    padding: 7rem 5rem 5rem 5rem;
+}
+
+.main-content .map .comment{
+    margin-top: 3rem;
+    font-family: var(--Abel);
+}
+
+.main-content .map .comment .add{
+    margin: 1.5rem;
+}
+
+.main-content .map .comment input{
+    margin-bottom: 1.5rem;
+}
+
+.main-content .map .comment button{
+    font-size: 1.3rem;
+    font-family: var(--Abel);
+}
+
+.main-content .map .comment button:hover{
+    background-color: orange;
+}
+
+.main-content .map .comment h4{
+    font-size: 2.5rem
+}
+.main-content .map .comment table tr td h5{
+    font-size: 1.8rem
+}
+
+.main-content .map .comment table tr td p{
+    font-family: var(--Abel);
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+
+/* --- Follow us --- */
+
+.follow-us{
+    margin: 1rem;
+    padding: 2rem;
+    font-family: var(--Abel);
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.follow-us h4{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.follow-us .items a{
+    color: #555;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+.follow-us .items a:hover{
+    color: orange;
+}
+
+.follow-us .items i{
+    font-size: 4rem;
+}
+
+/* -x- Follow us -x- */
+
+/* -x- other -x- */
+
+/* --- footer --- */
+
+.dev{
+    width: auto;
+    height: auto;
+    font-family: var(--Abel);
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.dev a{
+    /* text-align: center; */
+    font-size: 1.4  rem;
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dev a:hover{
+    font-size: 1.6  rem;
+    color: orange;
+}
+
+.dev a span{
+    color: orange;
+}
+
+/* -x- footer -x- */

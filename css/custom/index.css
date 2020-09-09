@@ -1,0 +1,675 @@
+@import url('../font/fonts.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+
+:root{
+    /* Theme color */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+
+    /* gradient color */
+    --sky:linear-gradient(120deg,#a1c4fd 0%,#c2e9fb 100%);
+
+    /* theme font-family */
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+}
+
+/* -------- Global Classes -------- */
+
+a{
+    text-decoration: none;
+    color:var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+hr{
+    margin-bottom: .2rem 0;
+}
+
+/* ----x--- Global Classes ---x---- */
+
+/* -------- navbar -------- */
+
+.nav{
+    /* background-color:#f0f0f0; */
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 7vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    margin-top: .9rem;
+    margin-bottom: .2rem 0;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: .7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: .4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height:  30rem;
+}
+
+/* .nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+} */
+
+.nav .nav-menu .nav-brand span{
+    color: #FE980F;
+}
+
+.nav .nav-brand a{
+    font-size: .6rem;
+    text-align: center;
+    padding: .4rem 0;
+    display: block;
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: .5rem;
+    margin-left: 1rem;
+}
+
+.nav .login{
+    text-align: center;
+    padding: 1rem 0;
+    font-style: normal;
+    font-weight: 0;
+}
+
+.nav .login a{
+    font-family: var(--Abel);
+    text-decoration: none;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/* .nav .login a:hover{
+    font-size: 1.9rem;
+} */
+
+.nav .login i{
+    padding: 0.2rem;
+    padding-right: .7rem;
+    padding-left: .7rem;
+    color: #888;
+}
+
+.nav .login i:hover{
+    color: #a1c4cf;
+}
+
+.nav .login span{
+    color: #FE980F;
+}
+
+/* ----x--- navbar ---x---- */
+
+/* -------- popup -------- */
+
+.modal .modal-dialog .modal-body .btn_index{
+    font-size: 1.1em;
+    font-family: var(--Abel);
+}
+
+.modal .modal-dialog .modal-content i{
+    color: #FE980F;
+}
+
+.modal .modal-dialog .modal-content h4{
+    font-family: var(--Abel);
+}
+
+.modal .modal-dialog .modal-body label{
+    font-family: var(--Abel);
+}
+
+.modal .modal-dialog .modal-body input{
+    font-family: var(--Abel);
+}
+
+.modal .modal-dialog .modal-body label span{
+    color: #FE980F;
+}
+
+.modal .modal-dialog {
+    width: 35rem;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    margin-right: 1rem;
+    position: relative;
+    z-index: 2;
+  }
+
+/* ----x--- popup ---x---- */
+
+/*-------- Sidebar --------*/
+
+.container .content{
+    width: 70%;
+    /* float: right;     */
+    background: #555;
+}
+
+.site-content{
+    background: #f2f2f2;
+    width: 20%;
+    float: left;
+}
+
+.site-content > .sidebar .category-list{
+    font-family: var(--Livvic);
+}
+
+.site-content > .sidebar .category-list .list-items{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{
+    color: black;
+}
+
+/* .site-content .sidebar .popular-post .post-content{
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 8rem;
+} */
+
+/* .site-content .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter{
+    padding-top: 3rem;
+}
+
+.site-content .sidebar .newsletter .form-element{
+    padding: .5rem 2rem;
+}
+
+.site-content .sidebar .newsletter .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+    font-family: var(--Lexend);
+    font-size: 1rem;
+}
+
+.site-content .sidebar .newsletter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--sky);
+} */
+
+.site-content .sidebar .popular-tags{
+    padding: 5rem 0;
+}
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+}
+
+/*----x--- Sidebar ---x----*/
+/* .clear-flex {
+    background: #f9f9f9;
+  } */
+
+.box-1 {
+    float: left;
+    width: 19.5%;
+    padding: 1rem;
+    margin-right: .5%;
+    position: relative;
+  }
+
+  .box-2 {
+    float: left;
+    width: 60%;
+    padding: 1rem 5rem 1rem 5rem;
+    /* background: #f2f2f2; */
+    /* height: 1000rem; */
+  }
+  .box-3 {
+    float: right;
+    width: 19.5%;
+    padding: 1rem;
+    margin-right: .5%;
+    /* position: relative; */
+  }
+  
+  .clear-flex::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .clear-flex .box-1 h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+
+ .clear-flex .box-1 h3 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: .2rem solid  #dfdfdf; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+ } 
+ 
+ .clear-flex .box-1 h3 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ .clear-flex .box-1 table{ 
+    align-items: center;
+    width: 100%;
+    margin-top: 3.5rem;
+}
+
+ /* .clear-flex .box-1 table tr {  
+    text-align: center;
+} */
+
+ .clear-flex .box-1 table tr td { 
+    background:#fff; 
+    padding: .3rem; 
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+.clear-flex .box-1 table tr td a{ 
+    color: #555;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.clear-flex .box-1 table tr td a:hover{ 
+    color: orange;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+/* Box-2 table */
+.clear-flex .box-2 table{ 
+    height: 200px;
+    width: 100%;
+}
+
+/* .clear-flex .box-2 table tr{ 
+    
+} */
+
+.clear-flex .box-2 table tr td{ 
+    height: 210px;
+    padding: 5px;
+    /* border: orange 1px solid; */
+}
+
+.clear-flex .box-2 table tr td .tbl-section{ 
+    border: orange 1px solid;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.clear-flex .box-2 table tr td a{ 
+    color: #555;
+}
+
+.clear-flex .box-2 table tr td .tbl-items-img{ 
+    height: 200px;
+    width: 25%;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 10px;
+    /* margin: 2rem; */
+    /* background: #000000;  */
+
+}
+.clear-flex .box-2 table tr td .tbl-items{ 
+    height: 200px;
+    width: 60%;
+    border-radius: 5px;
+    float: right;
+    /* margin: 2rem; */
+    /* background: #000000; */
+    padding-left: 25px;
+}
+
+.clear-flex .box-2 table tr td .tbl-items-img img{ 
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    /* margin: 2rem; */
+}
+
+.clear-flex .box-2 table tr td .tbl-items .tbl-details{ 
+    height: 100%;
+    width: 100%;
+    /* float: left; */
+    /* text-align: left; */
+    justify-items: left;
+    font-family: var(--Abel);
+}
+.clear-flex .box-2 table tr td .tbl-items .tbl-details .dtls{ 
+    height: 100%;
+    width: 100%;
+    float: left;
+    justify-items: left;
+    font-family: var(--Abel);
+    padding-left: 2rem;
+}
+
+.clear-flex .box-2 table tr td .tbl-items .tbl-details .dtls span{ 
+    color: orange;
+}
+
+.clear-flex .box-2 table tr td .tbl-items .tbl-details .itm-btn{ 
+    justify-items: right;
+    float: right;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-family: var(--Abel);
+    color: #333;
+    /* font-weight: bold; */
+}
+
+.clear-flex .box-2 table tr td .tbl-items .tbl-details .itm-btn:hover{ 
+    color: #555;
+    background: orange;
+    font-size: 1.6rem;
+}
+
+.clear-flex .box-2 table tr td .tbl-items .tbl-details .itm-btn:active{ 
+    color: #333;
+    background: orange;
+}
+
+/* Box-3 */
+.clear-flex .box-3 h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+
+ .clear-flex .box-3 h3 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: .2rem solid  #dfdfdf; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+ } 
+ 
+ .clear-flex .box-3 h3 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ .clear-flex .box-3 table{ 
+    /* align-items: center; */
+    width: 100%;
+    margin-top: 3.5rem;
+}
+
+ /* .clear-flex .box-1 table tr {  
+    text-align: center;
+} */
+
+ .clear-flex .box-3 table tr td { 
+    background:#fff; 
+    padding: .3rem; 
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.clear-flex .box-3 table tr td a{ 
+    color: #555;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.clear-flex .box-3 table tr td a:hover{ 
+    color: orange;
+    font-size: 2.1rem;
+    text-decoration: none;
+}
+
+/* Box-3 end */
+
+/*----- Footer -----*/
+
+footer{
+    width: 100%;
+    height: auto;
+    /* background: #f1f1f1; */
+    padding: 1rem;
+    margin: 2rem;
+}
+
+footer .nav-brand span{
+    color: #FE980F;
+}
+
+footer .nav-brand a{
+    font-size: .6rem;
+    text-align: center;
+    padding: .4rem 0;
+    display: block;
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: .5rem;
+    margin-left: 1rem;
+}
+
+footer .items{
+    width: 100%;
+    height: auto;
+}
+
+footer .items .item-content{
+    float: left;
+    width: 33.33%;
+    /* background: #555; */
+    text-align: center;
+    font-family: var(--Abel);
+}
+
+footer .items .item-content .items{
+    width: 100%;
+    /* background: #555; */
+    text-align: center;
+    font-family: var(--Abel);
+    padding: 2rem;
+}
+
+footer .items .item-content .items i{
+    font-size: 1.5rem;
+    color: #555;
+    text-decoration: none;
+}
+
+footer .items .item-content .items a{
+    font-size: 1.4  rem;
+    /* margin: .3rem; */
+    color: #555;
+    text-decoration: none;
+}
+
+footer .items .item-content .items a:hover{
+    font-size: 1.7rem;
+    /* margin: .3rem; */
+    color: orange;
+    text-decoration: none;
+}
+
+footer .items .item-content .items i{
+    font-size: 3.2rem;
+    margin: .3rem;
+    color: #555;
+}
+
+footer .items .item-content .items i:hover{
+    font-size: 3.5rem;
+    /* margin: .3rem; */
+    color: orange;
+}
+
+footer .dev{
+    width: auto;
+    height: auto;
+    font-family: var(--Abel);
+}
+
+footer .dev a{
+    /* text-align: center; */
+    font-size: 1.4  rem;
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .dev a:hover{
+    font-size: 1.6  rem;
+    color: orange;
+}
+
+footer .dev a span{
+    color: orange;
+}
+
+/*--x-- Footer --x--*/

@@ -1,0 +1,524 @@
+@import url('../font/fonts.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+:root{
+    /* Theme color */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+
+    /* gradient color */
+    --sky:linear-gradient(120deg,#a1c4fd 0%,#c2e9fb 100%);
+
+    /* theme font-family */
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+}
+
+/* -------- Global Classes -------- */
+
+a{
+    text-decoration: none;
+    color:var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+hr{
+    margin-bottom: .2rem 0;
+}
+
+/* ----x--- Global Classes ---x---- */
+
+/* -------- Section one -------- */
+
+.sec-one{
+    width: 100%;
+    background: #f8f8f8;
+}
+
+.sec-one hr{
+    height: 2px;
+    background: #555;
+    border-radius: 50px;
+    margin-top: 5rem;
+}
+
+.box-1 {
+    float: left;
+    width: 29.5%;
+    padding: 1rem;
+    margin-right: .5%;
+    position: fixed;
+    /* background-color: orange; */
+    background: #f8f8f8;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .box-2 {
+    float: right;
+    width: 69.5%;
+    padding: 1rem 5rem 1rem 5rem;
+    /* background: #756161; */
+    /* height: 1000rem; */
+    background: #f8f8f8;
+    /* height: max-content; */
+  }
+
+  /* --- box-1 --- */
+  .nav-brand{
+      text-align: center;
+  }
+
+  .box-1 .nav-brand span{
+    color: #FE980F;
+    }
+
+    .box-1 .nav-brand a{
+    font-size: .6rem;
+    text-align: center;
+    padding: .4rem 0;
+    display: block;
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: .5rem;
+    margin-left: 1rem;
+    }
+
+    .box-1 .nav-brand h4{
+        font-family: var(--Abel);
+    }
+
+    .box-1 .nav-brand i{
+        color: orange;
+    }
+
+  .box-1 img{
+      width: 50%;
+      height: auto;
+      align-items: center;
+      font-family: var(--Abel);
+      /* border-radius: 100%; */
+      margin-left: 24.5%;
+      margin-right: 24.5%;
+      margin-top: 1.5rem;
+  }
+
+  .box-1 img:hover{
+    width: 55%;
+    height: auto;
+    align-items: center;
+    font-family: var(--Abel);
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+  .box-1 .details{
+      padding: 1.5rem;
+      text-align: center;
+  }
+
+  .box-1 .details h4{
+      font-family: var(--Abel);
+      margin-top: 15px;
+  }
+
+  .box-1 .details h4 span{
+    color: orange;
+    cursor: pointer;
+}
+
+.box-1 .details h4 span:hover{
+    font-size: 2.1rem;
+}
+
+  /* -x- box-1 -x- */
+
+  /* --- box-2 --- */
+
+  /* .box-1 ul{
+    color: orange;
+    background: orange;
+    cursor: pointer;
+} */
+
+/* --- Account details tab --- */
+
+/* --- Nav bar --- */
+
+.sec-one .nav{
+    float: right;
+    width: 69.5%;
+    padding: 1rem 0rem 1rem 0rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.sec-one .nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+  
+  .sec-one .nav li {
+    float: left;
+  }
+  
+  .sec-one .nav li a {
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+
+  .sec-one .nav li i {
+    color: orange;
+  }
+
+  .sec-one .nav li a:hover{
+    color: orange;
+    background: #f2f2f2;
+  }
+
+/* -x- Nav-bar-x- */
+
+.box-2 .account-tab{
+    margin-top: 5rem;
+}
+
+.box-2 .account-tab .header h3{
+    font-family: var(--Abel);
+}
+
+.box-2 .account-tab .edit-profile ul li a{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+}
+
+.box-2 .account-tab .edit-profile ul li a span{
+    color: orange;
+}
+
+/* .box-2 .account-tab .edit-profile ul li a span:hover{
+    color: #555;
+} */
+
+.box-2 .account-tab .edit-profile ul li a:active{
+    color: orange;
+}
+
+.box-2 .account-tab .edit-profile ul li a{
+    color: #555;
+}
+
+.box-2 .account-tab .edit-profile .details label{
+    font-family: var(--Abel);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.box-2 .account-tab .edit-profile .details input{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+    width: 50%;
+}
+
+.box-2 .account-tab .edit-profile .details button{
+    font-family: var(--Abel);
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.box-2 .account-tab .edit-profile .details button:hover{
+    font-size: 1.7rem;
+    background: #555;
+    color: #f9f9f9;
+}
+
+.box-2 .account-tab .edit-profile .change-psw label{
+    font-family: var(--Abel);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.box-2 .account-tab .edit-profile .change-psw input{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+    width: 50%;
+}
+
+.box-2 .account-tab .edit-profile .change-psw button{
+    font-family: var(--Abel);
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.box-2 .account-tab .edit-profile .change-psw button:hover{
+    font-size: 1.7rem;
+    background: #555;
+    color: #f9f9f9;
+}
+
+.box-2 .account-tab .header h3 span{
+    color: orange;
+}
+
+.box-2 .account-tab .tabs h3{
+    font-family: var(--Abel);
+}
+
+/* -x- Account details tab -x- */
+
+/* --- Advertisment tab --- */
+
+.box-2 .advertisment-tab{
+    margin-top: 5rem;
+}
+
+.box-2 .advertisment-tab .header h3{
+    font-family: var(--Abel);
+}
+
+.box-2 .advertisment-tab .advertisments ul li a{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+}
+
+.box-2 .advertisment-tab .advertisments ul li a span{
+    color: orange;
+}
+
+/* .box-2 .advertisment-tab .advertisments ul li a span:hover{
+    color: #555;
+} */
+
+.box-2 .advertisment-tab .advertisments ul li a:active{
+    color: orange;
+}
+
+.box-2 .advertisment-tab .advertisments ul li a{
+    color: #555;
+}
+
+.box-2 .advertisment-tab .advertisments .new-ads label{
+    font-family: var(--Abel);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.box-2 .advertisment-tab .advertisments .new-ads input{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+    width: 50%;
+}
+
+.box-2 .advertisment-tab .advertisments .new-ads select{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+    width: 50%;
+}
+
+.box-2 .advertisment-tab .advertisments .new-ads textarea{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+    width: 50%;
+}
+
+.box-2 .advertisment-tab .advertisments .new-ads button{
+    font-family: var(--Abel);
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.box-2 .advertisment-tab .advertisments .new-ads button:hover{
+    font-size: 1.7rem;
+    background: #555;
+    color: #f9f9f9;
+}
+
+.box-2 .advertisment-tab .advertisments .view-ads label{
+    font-family: var(--Abel);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.box-2 .advertisment-tab .advertisments .view-ads input{
+    font-family: var(--Abel);
+    font-size: 1.7rem;
+    width: 50%;
+}
+
+.box-2 .advertisment-tab .advertisments .view-ads button{
+    font-family: var(--Abel);
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.box-2 .advertisment-tab .advertisments .view-ads button:hover{
+    font-size: 1.7rem;
+    background: #555;
+    color: #f9f9f9;
+}
+
+.box-2 .advertisment-tab .header h3 span{
+    color: orange;
+}
+
+.box-2 .advertisment-tab .tabs h3{
+    font-family: var(--Abel);
+}
+
+/* --- View ads --- */
+
+.box-2 .advertisment-tab .view-ads table{
+    margin: 5rem 2rem 1rem 2rem;
+}
+
+.box-2 .advertisment-tab .view-ads table tr td{
+    padding: 1rem;
+}
+
+.box-2 .advertisment-tab .view-ads table tr td:hover{
+    background: #f3f3f3;
+}
+
+.box-2 .advertisment-tab .view-ads table tr td a{
+    text-decoration: none;
+    color: #555;
+}
+
+.box-2 .advertisment-tab .view-ads table tr td .items .items-img{
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+.box-2 .advertisment-tab .view-ads table tr td .items .items-detail{
+    width: 60%;
+    height: auto;
+    float: right;
+    padding: 1rem 1rem 1rem 3rem;
+    font-family: var(--Abel);
+}
+
+.box-2 .advertisment-tab .view-ads table tr td .items .items-img img{
+    width: 100%;
+    height: auto;
+}
+
+.box-2 .advertisment-tab .view-ads table tr td .items .items-detail span{
+    color: orange;
+}
+
+
+/* -x- View ads -x- */
+
+/* -x- Advertisment tab -x- */
+
+  /* -x- box-2 -x- */
+
+/* ----x--- Section one ---x---- */
+
+/* -------- Choose profile picture -------- */
+
+.modal .modal-dialog .modal-body label{
+    font-family: var(--Abel);
+}
+
+.modal .modal-dialog .modal-body label span{
+    color: #FE980F;
+}
+
+/* .modal .modal-dialog .modal-body form input{
+    color: #FE980F;
+    border-radius: 5px;
+} */
+
+/* ----x--- Choose profile picture ---x---- */
+
+/* layout.css Style */
+/* .upload .file-upload-wrapper {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+  }*/
+  
+  /* skin.css Style*/
+  /* .upload .file-upload {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 200px;
+    text-align: center
+  }
+  .upload  .file-upload-wrapper.drop {
+    color: #222;
+    border-color: #222;
+  }  */

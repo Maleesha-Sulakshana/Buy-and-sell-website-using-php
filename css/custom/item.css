@@ -1,0 +1,260 @@
+@import url('../font/fonts.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+:root{
+    /* Theme color */
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+
+    /* gradient color */
+    --sky:linear-gradient(120deg,#a1c4fd 0%,#c2e9fb 100%);
+
+    /* theme font-family */
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+}
+
+/* -------- Global Classes -------- */
+
+a{
+    text-decoration: none;
+    color:var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+hr{
+    margin-bottom: .2rem 0;
+}
+
+/* ----x--- Global Classes ---x---- */
+
+/* --- Nav bar --- */
+
+.nav-logo{
+    width: 15%;
+    float: left;
+    text-align: center;
+    padding-left: .5rem;
+    /* background-color: #f9f9f9; */
+}
+
+.nav{
+    width: 84.5%;
+    float: right;
+}
+
+.nav-bar{
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 3rem 0 3rem;
+    overflow: hidden;
+    /* background-color: #f9f9f9; */
+  }
+  
+  .nav-bar li {
+    float: left;
+  }
+  
+  .nav-bar li a {
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+
+  .nav-bar li i {
+    color: orange;
+  }
+
+  .nav-bar li a:hover{
+    color: orange;
+    background: #f2f2f2;
+  }
+
+.nav-bar .nav-logo .nav-brand span{
+    color: #FE980F;
+}
+
+.nav-bar .nav-logo .nav-brand a{
+    font-size: .6rem;
+    text-align: center;
+    padding: .4rem 0;
+    display: block;
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+
+/* -x- Nav bar -x- */
+
+/* --- Main --- */
+
+/* --- items --- */
+
+main .items{
+    width: 100%;
+    height: auto;
+    margin-top: 15rem;
+    margin-bottom: 1rem;
+}
+
+main .items .images{
+    width: 49.75%;
+    float: left;
+    /* background: #0f0f0f; */
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* padding-top: 7.5rem; */
+    /* border: 1px solid black; */
+}
+
+main .items .images img{
+    width: 40%;
+    height: 40rem;
+}
+
+main .items .details{
+    width: 49.75%;
+    float: right;
+    /* background: #333333; */
+    height: auto;
+    padding-left: 5rem;
+    padding-right: 5px;
+    padding-top: none;
+    /* border: 1px solid black; */
+}
+
+main .items .details h3{
+    font-family: var(--Abel);
+}
+
+main .items .details .header{
+    font-family: var(--Abel);
+}
+
+main .items .details .header .locate{
+    margin-left: 3rem;
+}
+
+main .items .details .header h4 span{
+    color: orange;
+}
+
+main .items .details .header .price{
+    margin: 3rem;
+}
+
+main .items .details .header .price h4{
+    font-size: 2.5rem;
+}
+
+main .items .details .header .price h4{
+    font-size: 2.5rem;
+}
+
+main .items .details .desc{
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+main .items .details .desc p{
+    font-size: 1.7rem;
+    font-family: var(--Abel);
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.comment{
+    width: 100%;
+}
+
+/* main .items .details{
+    border: 1px solid #000;
+} */
+
+/* -x- items -x- */
+
+/* --- image view --- */
+
+.mySlides {display:none;}
+
+/* -x- image view -x- */
+
+/* -x- Main -x- */
